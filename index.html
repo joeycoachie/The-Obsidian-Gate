@@ -134,30 +134,62 @@
         // Add new clients here. Format: "PASSWORD": { name: "PLAYER_ID", route: "DESTINATION_URL" }
         
         const gatewayLogic = {
-            // Your Master Login
-            "ARCHITECT-001": { 
-                name: "ARCHITECT", 
-                route: "/master-dashboard.html" // Change to your actual master link
+    // ---------------------------------------------------------
+    // THE ARCHITECT (S-RANK / GOD MODE)
+    // ---------------------------------------------------------
+    "ARCHITECT-001": {
+        name: "JOEYCOACHIE2502@",
+        status: "S-RANK", 
+        // STEP 1: Replace this with your LIVE Master Dashboard Vercel URL
+        route: "https://v0-m-o-e-master-dashboard.vercel.app/", 
+        
+        // STEP 2: Registry for the Selection Menu (Screenshot 2)
+        assets: [
+            { 
+                id: "KIN-013 (MASTER)", 
+                title: "The Unwind (Architect View)", 
+                type: "KINETIC", 
+                route: "https://kin-013-a.vercel.app/" // Updated with live link
             },
-            
-            // Client 1 (e.g., Elaine's Protocol)
-            "ELEINEWONG": { 
-                name: "PLAYER 042", 
-                route: "https://kin-013-c.vercel.app/" 
+            { 
+                id: "KIN-013 (CLIENT)", 
+                title: "The Unwind (Client View)", 
+                type: "KINETIC", 
+                route: "https://kin-013-client.vercel.app" // Updated with live link
             },
-            
-            // Client 2 (e.g., Danny's Audit)
-            "DANNY-SYS": { 
-                name: "FOUNDER NODE", 
-                route: "ops_kinetic_pricing_v2.html" 
+            { 
+                id: "MET-001", 
+                title: "The Diagnostic Gate", 
+                type: "METABOLIC", 
+                route: "https://v0-moe-unified-gate-v2.vercel.app" 
             },
-
-            // The Unified System Gate (Diagnostic)
-            "START": {
-                name: "INITIATE",
-                route: "https://v0-moe-unified-gate-v2.vercel.app"
+            { 
+                id: "SYS-P045", 
+                title: "NLP Spatial Dynamics", 
+                type: "ENTERPRISE", 
+                route: "#" 
             }
-        };
+        ],
+        message: "SYMBOLS RECOGNIZED. OPENING COMMAND OVERRIDE."
+    },
+
+    // ---------------------------------------------------------
+    // CLIENT LOGIC (Personalized Routing)
+    // ---------------------------------------------------------
+    "ELEINEWONG": {
+        name: "PLAYER 042",
+        status: "CLIENT",
+        route: "https://kin-013-c.vercel.app/",
+        message: "INITIATING UNWIND SEQUENCE..."
+    },
+    
+    "DANNY-SYS": {
+        name: "FOUNDER NODE",
+        status: "AUTHORITY",
+        route: "https://v0-m-o-e-unified-system-gate-v3.vercel.app/danny-audit",
+        message: "KINETIC PERFORMANCE MODULES READY."
+    }
+};
 
         // ==========================================
         // THE EXECUTION ENGINE
